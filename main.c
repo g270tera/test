@@ -15,7 +15,7 @@ double myRoot(double x) // x >= 0 ではないとき exit(1) とする。
 int main(void)
 {
   int i;
-  double *x = (double *)malloc(sizeof(double) * 100);
+  double *x = (double *)malloc(sizeof(double) * 101);
 
   for( i = 0; i <= 100; i ++ ){//iが定義されずに計算されるため,forを用いる。
       x[i] = myRoot((double)i);
