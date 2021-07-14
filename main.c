@@ -5,7 +5,7 @@
 double myRoot(double x) // x >= 0 ではないとき exit(1) とする。
 {
   int y;
-  if( x < 0 ){//xが負のとき
+  if( !(x >= 0) ){//xが負のとき
     exit(1);
   }
   y = sqrt(x);
